@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, WakeMeActivity!</string>
     <string name="app_name">WakeMe</string>
+    <string name="button_new">Add New</string>
+    <string name="text_list_empty">Please click on <b>Add New</b> to create a profile</string>
 </resources>
