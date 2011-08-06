@@ -1,6 +1,7 @@
 package org.jfsd.wakeme;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 public class WakeMeActivity extends Activity {
@@ -8,6 +9,20 @@ public class WakeMeActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select);
+
     }
+
+    /*
+     * (non-Javadoc)
+     * @see android.app.Activity#onStart()
+     */
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        Intent editActivity = new Intent(this, EditActivity.class);
+        startActivity(editActivity);
+        this.finish();
+    }
+
 }

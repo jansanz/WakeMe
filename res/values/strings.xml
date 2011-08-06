@@ -2,5 +2,17 @@
 <resources>
     <string name="app_name">WakeMe</string>
     <string name="button_new">Add New</string>
-    <string name="text_list_empty">Please click on <b>Add New</b> to create a profile</string>
+    <string name="text_list_empty">
+        Please tap on
+        <b>Add New</b>
+        to create a profile
+    </string>
+    <string name="edit_profile">Profile Name</string>
+    <string name="edit_ip">Hostname / IP</string>
+    <string name="edit_subnet">Subnet Mask</string>
+    <string name="edit_MAC">MAC Address</string>
+    <string name="edit_protocol">Protocol</string>
+    <string name="edit_port">Port</string>
+    <string name="edit_wake">Wake!</string>
+    <string name="edit_save">Save</string>
 </resources>

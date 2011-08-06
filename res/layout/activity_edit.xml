@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:stretchColumns="1">
+        <TableRow
+            style="@style/EditTableRow"
+            android:id="@+id/tableRow1">
+            <TextView
+                style="@style/EditTextView"
+                android:id="@+id/textView1"
+                android:text="@string/edit_profile" />
+            <EditText
+                style="@style/EditEditText"
+                android:id="@+id/edit_profile">
+            </EditText>
+        </TableRow>
+        <TableRow
+            android:id="@+id/TableRow04"
+            style="@style/EditTableRow">
+            <TextView
+                style="@style/EditTextView"
+                android:text="@string/edit_MAC"
+                android:id="@+id/TextView05" />
+            <EditText
+                android:digits="abcdefABCDEF1234567890:"
+                android:id="@+id/edit_mac"
+                style="@style/EditEditText" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            style="@style/EditTableRow">
+            <TextView
+                style="@style/EditTextView"
+                android:id="@+id/TextView01"
+                android:text="@string/edit_ip" />
+            <EditText
+                style="@style/EditEditText"
+                android:id="@+id/edit_ip" />
+        </TableRow>
+        <TableRow
+            style="@style/EditTableRow"
+            android:id="@+id/TableRow01">
+            <TextView
+                style="@style/EditTextView"
+                android:id="@+id/TextView02"
+                android:text="@string/edit_subnet" />
+            <EditText
+                style="@style/EditEditText"
+                android:text="255.255.255.255"
+                android:id="@+id/edit_subnet"
+                android:digits="1234567890."
+                android:inputType="number" />
+        </TableRow>
+        <TableRow
+            style="@style/EditTableRow"
+            android:id="@+id/TableRow02">
+            <TextView
+                style="@style/EditTextView"
+                android:id="@+id/TextView03"
+                android:text="@string/edit_protocol" />
+            <Spinner
+                android:id="@+id/spinner_protocol"
+                style="@style/EditEditText"
+                android:entries="@array/edit_protocols" />
+        </TableRow>
+        <TableRow
+            style="@style/EditTableRow"
+            android:id="@+id/TableRow03">
+            <TextView
+                style="@style/EditTextView"
+                android:id="@+id/TextView04"
+                android:text="@string/edit_port" />
+            <EditText
+                style="@style/EditEditText"
+                android:digits="1234567890"
+                android:id="@+id/edit_port"
+                android:text="9"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@android:style/ButtonBar">
+        <Button
+            android:id="@+id/edit_button_wake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickButtonWake"
+            android:text="@string/edit_wake" />
+        <Button
+            android:id="@+id/edit_button_save"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickButtonSave"
+            android:text="@string/edit_save" />
+    </LinearLayout>
+</LinearLayout>
