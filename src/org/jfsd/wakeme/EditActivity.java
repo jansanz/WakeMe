@@ -15,13 +15,14 @@ public class EditActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
+
     }
-    
+
     // onClick methods
     public void onClickButtonSave(View v) {
         Toast.makeText(this, "Save", Toast.LENGTH_SHORT).show();
     }
-    
+
     public void onClickButtonWake(View v) {
         Toast.makeText(this, "Wake up!!", Toast.LENGTH_SHORT).show();
     }

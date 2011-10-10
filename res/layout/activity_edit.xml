@@ -69,6 +69,7 @@
             <Spinner
                 android:id="@+id/spinner_protocol"
                 style="@style/EditEditText"
+                android:prompt="@string/edit_protocol_prompt"
                 android:entries="@array/edit_protocols" />
         </TableRow>
         <TableRow
